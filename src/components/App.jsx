@@ -4,17 +4,19 @@ import Data from "./Data";
 import Methods from "./Methods";
 import Results from "./Results";
 import Team from "./Team";
+import Navbar from "./Navbar";
 
 function App() {
   return (
-    <>
+    <div className="font-display">
+      <Navbar />
       <Top />
       <Overview />
       <Data />
       <Methods />
       <Results />
       <Team />
-    </>
+    </div>
   );
 }
 
