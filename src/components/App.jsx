@@ -8,7 +8,7 @@ import Navbar from "./Navbar";
 
 function App() {
   return (
-    <div className="font-display relative">
+    <div className="relative font-display">
       <Navbar />
       <Top />
       <Overview />

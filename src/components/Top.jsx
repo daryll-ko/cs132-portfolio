@@ -44,8 +44,8 @@ function Top() {
         </div>
       </div>
       <div className="flex justify-center">
-        {members.map(({ name, section }) => (
-          <div className="flex w-48 flex-col items-center">
+        {members.map(({ name, section }, index) => (
+          <div className="flex w-48 flex-col items-center" key={index}>
             <div className="mb-3 h-12 w-12 rounded-full bg-black/50" />
             <div>{name}</div>
             <div>{section}</div>
