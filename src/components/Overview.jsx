@@ -27,7 +27,7 @@ function Overview() {
       <h3 className="mb-10 text-center text-lg text-gray-500 md:text-2xl">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, earum?
       </h3>
-      <div className="flex justify-center gap-10 text-center">
+      <div className="mb-10 flex flex-wrap justify-center gap-10 text-center">
         {data.map(({ icon, heading, text }, index) => (
           <div
             key={index}
@@ -38,6 +38,15 @@ function Overview() {
             <p>{text}</p>
           </div>
         ))}
+      </div>
+      <p className="mb-10 text-center text-lg text-gray-500 md:text-2xl">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit,
+        dolorem?
+      </p>
+      <div className="flex justify-center">
+        <button className="mx-auto rounded-md bg-blue-500 py-2 px-6 text-lg text-white transition-all hover:scale-110">
+          Look at our data!
+        </button>
       </div>
     </section>
   );
