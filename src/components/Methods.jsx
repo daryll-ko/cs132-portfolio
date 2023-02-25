@@ -1,5 +1,5 @@
 function Methods() {
-  return <div>Methods</div>;
+  return <section id="methods">Methods</section>;
 }
 
 export default Methods;

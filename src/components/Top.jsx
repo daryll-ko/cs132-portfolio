@@ -16,7 +16,10 @@ function Top() {
     },
   ];
   return (
-    <section className="min-h-screen border-b border-solid border-black px-6 sm:px-10 lg:px-16">
+    <section
+      id="top"
+      className="min-h-screen border-b border-solid border-black px-6 sm:px-10 lg:px-16"
+    >
       <div className="lg:flex lg:items-center lg:py-16">
         <div className="flex w-full justify-center py-10">
           <img

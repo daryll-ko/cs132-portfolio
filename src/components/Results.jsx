@@ -1,5 +1,5 @@
 function Results() {
-  return <div>Results</div>;
+  return <section id="results">Results</section>;
 }
 
 export default Results;
