@@ -1,14 +1,19 @@
-import { useState } from "react";
+import Top from "./Top";
+import Overview from "./Overview";
+import Data from "./Data";
+import Methods from "./Methods";
+import Results from "./Results";
+import Team from "./Team";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
-      <h1>{count}</h1>
-      <button onClick={() => setCount((prevCount) => prevCount + 1)}>
-        Increment
-      </button>
+      <Top />
+      <Overview />
+      <Data />
+      <Methods />
+      <Results />
+      <Team />
     </>
   );
 }
