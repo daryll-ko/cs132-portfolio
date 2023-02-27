@@ -2,7 +2,9 @@
 
 Group 9's data science portfolio.
 
-Topic | Analysis of tweets during the pandemic suggesting Leni Robredo's incompetence as Vice President of the Philippines from 2016-2022.
+Members • Daryll Ko, Zandrew Garais, Westin Maceda
+
+Topic • Analysis of tweets during the pandemic suggesting Leni Robredo's incompetence as Vice President of the Philippines from 2016-2022.
 
 ## Stack
 
