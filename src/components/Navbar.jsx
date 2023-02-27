@@ -1,7 +1,7 @@
 function Navbar() {
   const sections = ["Top", "Overview", "Data", "Methods", "Results", "Team"];
   return (
-    <div className="sticky top-0 flex items-center justify-center gap-7 bg-[#282828] py-3 md:gap-10 md:py-5">
+    <div className="sticky top-0 z-50 flex items-center justify-center gap-7 bg-[#282828] py-3 md:gap-10 md:py-5">
       {sections.map((section, index) => (
         <a
           href={`#${section.toLowerCase()}`}
