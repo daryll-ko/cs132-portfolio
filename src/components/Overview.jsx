@@ -24,25 +24,27 @@ function Overview() {
       id="overview"
       className="border-b border-solid border-black py-20 px-6 sm:px-10 lg:px-16"
     >
-      <h1 className="mb-6 text-center text-3xl font-bold md:text-5xl">
+      <h1 className="mb-8 text-center text-3xl font-bold md:text-5xl">
         Overview
       </h1>
-      <h3 className="mb-10 text-center text-lg text-gray-500 md:text-2xl">
+      <h3 className="text-center text-lg text-gray-500 md:text-2xl">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, earum?
       </h3>
-      <div className="mb-10 flex flex-wrap justify-center gap-10 text-center">
+      <div className="my-16 flex flex-wrap justify-center gap-10 text-center">
         {data.map(({ icon, heading, text }, index) => (
           <div
             key={index}
-            className="h-72 w-72 rounded-md border border-solid border-black bg-white py-10"
+            className="flex h-80 w-80 flex-col justify-center gap-5 rounded-md border border-solid border-black bg-white py-10"
           >
-            <div className="mx-auto mb-6 w-fit text-[#ea8a94]">{icon}</div>
-            <h3 className="mb-3 text-2xl font-bold">{heading}</h3>
-            <p>{text}</p>
+            <div className="mx-auto w-fit text-[#ea8a94]">{icon}</div>
+            <div>
+              <h3 className="mb-3 text-2xl font-bold">{heading}</h3>
+              <p className="px-2">{text}</p>
+            </div>
           </div>
         ))}
       </div>
-      <p className="mb-10 text-center text-lg text-gray-500 md:text-2xl">
+      <p className="mb-8 text-center text-lg text-gray-500 md:text-2xl">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit,
         dolorem?
       </p>
