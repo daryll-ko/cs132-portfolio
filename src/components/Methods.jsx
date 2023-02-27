@@ -34,7 +34,7 @@ function Methods() {
             <div className="flex h-[70%] items-center justify-center border-b border-solid border-black">
               <img src={image} alt="Sample gradient" className="h-full" />
             </div>
-            <div className="flex h-[30%] flex-col justify-center gap-3">
+            <div className="flex h-[30%] flex-col justify-center gap-2">
               <h3 className="text-2xl font-bold">{heading}</h3>
               <p>{text}</p>
             </div>
