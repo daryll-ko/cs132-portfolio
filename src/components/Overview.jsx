@@ -28,7 +28,7 @@ function Overview() {
         Why are we doing this?
       </h1>
       <h3 className="text-center text-lg text-gray-500 md:text-2xl">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam, earum?
+        [description of our motivation]
       </h3>
       <div className="my-16 flex flex-wrap justify-center gap-10 text-center">
         {data.map(({ icon, heading, text }, index) => (
@@ -45,8 +45,7 @@ function Overview() {
         ))}
       </div>
       <p className="mb-8 text-center text-lg text-gray-500 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit,
-        dolorem?
+        [comment about our problem]
       </p>
       <div className="flex justify-center">
         <button className="mx-auto rounded-md bg-blue-500 py-2 px-6 text-lg text-white transition-all hover:scale-110">
