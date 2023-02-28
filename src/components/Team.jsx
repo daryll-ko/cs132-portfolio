@@ -1,4 +1,4 @@
-import DaryllImage from "../assets/daryll.jpg";
+import DaryllImage from "../assets/daryll.jpeg";
 import WestinImage from "../assets/westin.png";
 
 import { AiFillTwitterCircle, AiFillGithub } from "react-icons/ai";

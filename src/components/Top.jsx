@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 
 import LeniImage from "../assets/leni.jpg";
-import DaryllImage from "../assets/daryll.jpg";
+import DaryllImage from "../assets/daryll.jpeg";
 import WestinImage from "../assets/westin.png";
 
 function Top() {
