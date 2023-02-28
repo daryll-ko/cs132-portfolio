@@ -38,7 +38,7 @@ function Team() {
           <div className="flex w-48 flex-col items-center" key={index}>
             <div className="mb-8 h-48 w-48 rounded-full bg-black/50" />
             <div className="mb-3 text-xl font-bold">{name}</div>
-            <div className="flex gap-3 items-center">
+            <div className="flex items-center gap-3">
               <BsFacebook size={28} />
               <AiFillTwitterCircle size={30} />
               <AiFillGithub size={30} />
@@ -48,6 +48,9 @@ function Team() {
       </div>
       <p className="text-center">
         Ⓒ 2023 &lt;Team Name&gt;. All Rights Reserved.
+      </p>
+      <p className="mt-1 text-center italic">
+        Portrait of Leni Robredo by Jojo Mendoza.
       </p>
     </section>
   );
