@@ -28,9 +28,9 @@ function Data() {
       <h1 className="mb-6 text-center text-3xl font-bold md:text-5xl">
         Where did our data come from?
       </h1>
-      <h3 className="text-center text-lg text-gray-500 md:text-2xl">
+      <h2 className="text-center text-lg text-gray-500 md:text-2xl">
         [description about our data]
-      </h3>
+      </h2>
       <div className="mx-auto my-16 flex max-w-5xl flex-wrap justify-center gap-10 text-center">
         {data.map(({ img, heading, text }, index) => (
           <div

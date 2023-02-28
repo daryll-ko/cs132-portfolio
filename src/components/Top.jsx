@@ -50,7 +50,7 @@ function Top() {
           </span>
           .
         </h1>
-        <p className="my-3 text-center text-sm leading-6 text-gray-500 sm:text-base">
+        <p className="my-3 text-center text-sm leading-6 text-gray-700 sm:text-base">
           Lorem ipsum dolor sit,{" "}
           <span className="font-bold">
             Tweet Analysis of Leni Robredo's Competence as PH VP

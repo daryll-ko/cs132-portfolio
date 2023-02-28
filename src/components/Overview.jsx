@@ -28,9 +28,9 @@ function Overview() {
       <h1 className="mb-8 text-center text-3xl font-bold md:text-5xl">
         Why are we doing this?
       </h1>
-      <h3 className="text-center text-lg text-gray-500 md:text-2xl">
+      <h2 className="text-center text-lg text-gray-500 md:text-2xl">
         [description of our motivation]
-      </h3>
+      </h2>
       <div className="my-16 flex flex-wrap justify-center gap-10 text-center">
         {data.map(({ icon, heading, text }, index) => (
           <motion.div

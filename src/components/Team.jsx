@@ -36,9 +36,9 @@ function Team() {
       <h1 className="mb-6 text-center text-3xl font-bold md:text-5xl">
         Who <span className="italic">are</span> we?
       </h1>
-      <h3 className="mb-16 text-center text-lg text-gray-300 md:text-2xl">
+      <h2 className="mb-16 text-center text-lg text-gray-300 md:text-2xl">
         Hit us up if you have any questions!
-      </h3>
+      </h2>
       <div className="mb-16 flex justify-center gap-16">
         {members.map(
           (
