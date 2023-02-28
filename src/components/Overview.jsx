@@ -28,7 +28,7 @@ function Overview() {
       <h1 className="mb-8 text-center text-3xl font-bold md:text-5xl">
         Why are we doing this?
       </h1>
-      <h2 className="text-center text-lg text-gray-500 md:text-2xl">
+      <h2 className="text-center text-lg text-gray-700 md:text-2xl">
         [description of our motivation]
       </h2>
       <div className="my-16 flex flex-wrap justify-center gap-10 text-center">
@@ -47,7 +47,7 @@ function Overview() {
           </motion.div>
         ))}
       </div>
-      <p className="mb-8 text-center text-lg text-gray-500 md:text-2xl">
+      <p className="mb-8 text-center text-lg text-gray-700 md:text-2xl">
         [comment about our problem]
       </p>
       <div className="flex justify-center">

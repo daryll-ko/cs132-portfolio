@@ -24,7 +24,7 @@ function Methods() {
       <h1 className="mb-8 text-center text-3xl font-bold md:text-5xl">
         Which tools did we use?
       </h1>
-      <h2 className="text-center text-lg text-gray-500 md:text-2xl">
+      <h2 className="text-center text-lg text-gray-700 md:text-2xl">
         [description about our methodology]
       </h2>
       <div className="mx-auto my-16 flex max-w-5xl flex-wrap justify-center gap-10 text-center">
@@ -48,7 +48,7 @@ function Methods() {
           </div>
         ))}
       </div>
-      <p className="text-center text-lg text-gray-500 md:text-2xl">
+      <p className="text-center text-lg text-gray-700 md:text-2xl">
         [description about our tools]
       </p>
     </section>

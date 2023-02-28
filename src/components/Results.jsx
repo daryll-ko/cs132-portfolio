@@ -21,7 +21,7 @@ function Results() {
       <h1 className="mb-8 text-center text-3xl font-bold md:text-5xl">
         What did we find out?
       </h1>
-      <h2 className="text-center text-lg text-gray-500 md:text-2xl">
+      <h2 className="text-center text-lg text-gray-700 md:text-2xl">
         [description about our results]
       </h2>
       <div className="mx-auto my-16 flex max-w-5xl flex-wrap justify-center gap-10 text-center">
@@ -40,7 +40,7 @@ function Results() {
           </div>
         ))}
       </div>
-      <p className="mb-8 text-center text-lg text-gray-500 md:text-2xl">
+      <p className="mb-8 text-center text-lg text-gray-700 md:text-2xl">
         Want to know more? Check out our GitHub repo!
       </p>
       <div className="flex justify-center">
