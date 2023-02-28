@@ -65,12 +65,26 @@ function Top() {
         <div className="flex justify-center gap-5">
           {members.map(({ img, firstName, lastName, section }, index) => (
             <motion.div
-              animate={{ y: [0, 10, 0] }}
+              animate={{
+                scale: [
+                  1,
+                  1 + 0.025 * (index + 1),
+                  1 + 0.025 * (index + 1),
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                  1,
+                ],
+              }}
               transition={{
-                ease: "linear",
-                duration: 2,
+                duration: 6,
+                delay: index * 2,
                 repeat: Infinity,
-                delay: index % 2,
               }}
               className="flex items-center gap-3 rounded-full border-2 border-solid border-black bg-gray-200 px-6 py-2 font-bold drop-shadow-xl"
               key={index}
