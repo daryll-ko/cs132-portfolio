@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import LeniImage from "../assets/leni.jpg";
 import DaryllImage from "../assets/daryll.jpeg";
 import WestinImage from "../assets/westin.png";
+import ZandrewImage from "../assets/zandrew.png";
 
 function Top() {
   const members = [
@@ -19,7 +20,7 @@ function Top() {
       section: "WFW",
     },
     {
-      img: DaryllImage,
+      img: ZandrewImage,
       firstName: "Zandrew",
       lastName: "Garais",
       section: "WFW",

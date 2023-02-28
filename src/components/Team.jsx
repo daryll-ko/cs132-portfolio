@@ -1,5 +1,6 @@
 import DaryllImage from "../assets/daryll.jpeg";
 import WestinImage from "../assets/westin.png";
+import ZandrewImage from "../assets/zandrew.png";
 
 import { AiFillTwitterCircle, AiFillGithub } from "react-icons/ai";
 import { BsFacebook, BsDiscord } from "react-icons/bs";
@@ -21,10 +22,10 @@ function Team() {
       discord: "WDTM#8951",
     },
     {
-      img: DaryllImage,
+      img: ZandrewImage,
       name: "Zandrew Garais",
-      facebook: "",
-      twitter: "",
+      facebook: "https://www.facebook.com/zandrew.molecules/",
+      facebookText: "zandrew.molecules",
       discord: "zands#1665",
     },
   ];
