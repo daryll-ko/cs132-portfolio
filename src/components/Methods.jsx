@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import TwitterImage from "../assets/twitter.png";
 import PythonImage from "../assets/python.png";
 
@@ -32,7 +34,12 @@ function Methods() {
             className="h-96 w-96 rounded-md border border-solid border-black bg-white"
           >
             <div className="flex h-[70%] items-center justify-center border-b border-solid border-black">
-              <img src={image} alt="Sample gradient" className="h-full" />
+              <motion.img
+                src={image}
+                alt="Sample gradient"
+                whileInView={{ rotate: [0, 15, -7.5, 0] }}
+                className="h-full"
+              />
             </div>
             <div className="flex h-[30%] flex-col justify-center gap-2">
               <h3 className="text-2xl font-bold">{heading}</h3>

@@ -36,7 +36,7 @@ function Overview() {
         {data.map(({ icon, heading, text }, index) => (
           <motion.div
             key={index}
-            animate={{ scale: [1, 1.05, 1, 1, 1, 1, 1, 1, 1] }}
+            animate={{ scale: [1, 1.05, 1.05, 1, 1, 1, 1, 1, 1, 1, 1, 1] }}
             transition={{ duration: 6, delay: index * 2, repeat: Infinity }}
             className="flex h-80 w-80 flex-col justify-center gap-5 rounded-md border border-solid border-black bg-white py-10"
           >
@@ -52,7 +52,10 @@ function Overview() {
         [comment about our problem]
       </p>
       <div className="flex justify-center">
-        <a href="https://github.com/daryll-ko/cs132-main">
+        <a
+          href="https://github.com/daryll-ko/cs132-main"
+          alt="GitHub repo link"
+        >
           <motion.button
             className="mx-auto rounded-md bg-blue-500 py-2 px-6 text-lg text-white"
             whileHover={{ scale: 1.1 }}

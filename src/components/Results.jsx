@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import RegressionImage from "../assets/regression.jpeg";
 import BarGraph from "../assets/bar-graph.jpeg";
 
@@ -45,9 +47,18 @@ function Results() {
         Want to know more? Check out our GitHub repo!
       </p>
       <div className="flex justify-center">
-        <button className="mx-auto rounded-md bg-blue-500 py-2 px-6 text-lg text-white transition-all hover:scale-110">
-          GitHub repo
-        </button>
+        <a
+          href="https://github.com/daryll-ko/cs132-main"
+          alt="GitHub repo link"
+        >
+          <motion.button
+            className="mx-auto rounded-md bg-blue-500 py-2 px-6 text-lg text-white"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            Look at our repo!
+          </motion.button>
+        </a>
       </div>
     </section>
   );
