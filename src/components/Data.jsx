@@ -1,30 +1,23 @@
 import SampleGradient from "../assets/sample-gradient.jpeg";
+import SampleGradient2 from "../assets/sample-gradient-2.jpeg";
+import SampleGradient3 from "../assets/sample-gradient-3.jpeg";
 
 function Data() {
   const data = [
     {
+      img: SampleGradient,
       heading: "Topic",
       text: "Lorem ipsum dolor sit amet.",
     },
     {
+      img: SampleGradient2,
       heading: "Keywords",
-      text: "Lorem ipsum dolor sit amet.",
+      text: "Lorem ipsum dolor sit amet?",
     },
     {
+      img: SampleGradient3,
       heading: "Tools",
-      text: "Lorem ipsum dolor sit amet.",
-    },
-    {
-      heading: "Topic",
-      text: "Lorem ipsum dolor sit amet.",
-    },
-    {
-      heading: "Keywords",
-      text: "Lorem ipsum dolor sit amet.",
-    },
-    {
-      heading: "Tools",
-      text: "Lorem ipsum dolor sit amet.",
+      text: "Lorem ipsum dolor sit amet!",
     },
   ];
   return (
@@ -39,17 +32,13 @@ function Data() {
         [description about our data]
       </h3>
       <div className="mx-auto my-16 flex max-w-5xl flex-wrap justify-center gap-10 text-center">
-        {data.map(({ heading, text }, index) => (
+        {data.map(({ img, heading, text }, index) => (
           <div
             key={index}
             className="h-72 w-72 rounded-md border border-solid border-black bg-gray-100"
           >
             <div className="h-[65%]">
-              <img
-                src={SampleGradient}
-                alt="Sample gradient"
-                className="h-full w-full"
-              />
+              <img src={img} alt="Sample gradient" className="h-full w-full" />
             </div>
             <div className="flex h-[35%] flex-col justify-center gap-2">
               <h3 className="text-2xl font-bold">{heading}</h3>
