@@ -34,8 +34,10 @@ function Overview() {
       </h3>
       <div className="my-16 flex flex-wrap justify-center gap-10 text-center">
         {data.map(({ icon, heading, text }, index) => (
-          <div
+          <motion.div
             key={index}
+            animate={{ scale: [1, 1.05, 1, 1, 1, 1, 1, 1, 1] }}
+            transition={{ duration: 6, delay: index * 2, repeat: Infinity }}
             className="flex h-80 w-80 flex-col justify-center gap-5 rounded-md border border-solid border-black bg-white py-10"
           >
             <div className="mx-auto w-fit text-[#ea8a94]">{icon}</div>
@@ -43,7 +45,7 @@ function Overview() {
               <h3 className="mb-3 text-2xl font-bold">{heading}</h3>
               <p className="px-2">{text}</p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
       <p className="mb-8 text-center text-lg text-gray-500 md:text-2xl">
