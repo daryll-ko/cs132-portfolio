@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 import { AiOutlineLike } from "react-icons/ai";
 import { IoChatbubbleOutline, IoCameraOutline } from "react-icons/io5";
 
@@ -48,9 +50,15 @@ function Overview() {
         [comment about our problem]
       </p>
       <div className="flex justify-center">
-        <button className="mx-auto rounded-md bg-blue-500 py-2 px-6 text-lg text-white transition-all hover:scale-110">
-          Look at our data!
-        </button>
+        <a href="https://github.com/daryll-ko/cs132-main">
+          <motion.button
+            className="mx-auto rounded-md bg-blue-500 py-2 px-6 text-lg text-white"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+          >
+            Look at our data!
+          </motion.button>
+        </a>
       </div>
     </section>
   );

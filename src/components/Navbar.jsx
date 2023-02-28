@@ -23,7 +23,7 @@ function Navbar() {
           </a>
         ))}
       </div>
-      <motion.div className="h-2 origin-left bg-red-500" style={{ scaleX }} />
+      <motion.div className="h-2 origin-left bg-[#282828]" style={{ scaleX }} />
     </div>
   );
 }
