@@ -28,7 +28,7 @@ function Results() {
         {data.map(({ image, heading, text }, index) => (
           <div
             key={index}
-            className="h-96 w-96 rounded-md border border-solid border-black bg-gray-100"
+            className="h-96 w-96 overflow-hidden rounded-md border border-solid border-black bg-gray-100"
           >
             <div className="flex h-[70%] items-center justify-center border-b border-solid border-black bg-white">
               <img src={image} alt="Sample gradient" className="h-full" />

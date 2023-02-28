@@ -35,10 +35,10 @@ function Data() {
         {data.map(({ img, heading, text }, index) => (
           <div
             key={index}
-            className="h-72 w-72 rounded-md border border-solid border-black bg-gray-100"
+            className="h-72 w-72 overflow-hidden rounded-md border border-solid border-black bg-gray-100"
           >
-            <div className="h-[65%]">
-              <img src={img} alt="Sample gradient" className="h-full w-full" />
+            <div className="h-[65%] overflow-hidden">
+              <img src={img} alt="Sample gradient" className="object-cover" />
             </div>
             <div className="flex h-[35%] flex-col justify-center gap-2">
               <h3 className="text-2xl font-bold">{heading}</h3>
