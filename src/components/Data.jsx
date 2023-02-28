@@ -30,7 +30,7 @@ function Data() {
   return (
     <section
       id="data"
-      className="border-b border-solid border-black py-20 px-6 sm:px-10 lg:px-16"
+      className="border-b-2 border-solid border-black bg-[#efefef] py-20 px-6 sm:px-10 lg:px-16"
     >
       <h1 className="mb-6 text-center text-3xl font-bold md:text-5xl">
         Where did our data come from?
