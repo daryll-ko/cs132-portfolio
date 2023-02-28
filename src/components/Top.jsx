@@ -28,9 +28,9 @@ function Top() {
   return (
     <section
       id="top"
-      className="min-h-screen border-b-2 border-solid border-black bg-[#efefef] py-20 px-6 sm:px-10 lg:flex lg:items-center lg:justify-center lg:gap-20 lg:px-20 lg:py-36"
+      className="flex min-h-screen flex-col items-center border-b-2 border-solid border-black bg-[#efefef] py-20 px-6 sm:px-10 lg:flex-row lg:justify-center lg:gap-20 lg:px-20 lg:py-36"
     >
-      <div className="relative h-48 w-48 overflow-hidden rounded-full lg:h-72 lg:w-72">
+      <div className="relative mb-8 h-48 w-48 overflow-hidden rounded-full lg:mb-0 lg:h-72 lg:w-72">
         <img
           src={LeniImage}
           alt="Profile Picture"
@@ -62,7 +62,7 @@ function Top() {
           blanditiis optio deleniti quos vel quasi? Vitae minima reprehenderit
           deserunt veritatis.
         </p>
-        <div className="flex justify-center gap-5">
+        <div className="flex flex-col items-center justify-center gap-5 md:flex-row lg:flex-col xl:flex-row">
           {members.map(({ img, firstName, lastName, section }, index) => (
             <motion.div
               animate={{
@@ -86,7 +86,7 @@ function Top() {
                 delay: index * 2,
                 repeat: Infinity,
               }}
-              className="flex items-center gap-3 rounded-full border-2 border-solid border-black bg-gray-200 px-6 py-2 font-bold drop-shadow-xl"
+              className="flex w-fit items-center gap-3 rounded-full border-2 border-solid border-black bg-gray-200 px-6 py-2 font-bold drop-shadow-xl"
               key={index}
             >
               <img
