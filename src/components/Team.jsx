@@ -25,8 +25,7 @@ function Team() {
       name: "Zandrew Garais",
       facebook: "",
       twitter: "",
-      github: "",
-      discord: "",
+      discord: "zands#1665",
     },
   ];
   return (
