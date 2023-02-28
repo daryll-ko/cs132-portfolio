@@ -1,25 +1,33 @@
+import DaryllImage from "../assets/daryll.jpg";
+import WestinImage from "../assets/westin.png";
+
 import { AiFillTwitterCircle, AiFillGithub } from "react-icons/ai";
-import { BsFacebook } from "react-icons/bs";
+import { BsFacebook, BsDiscord } from "react-icons/bs";
 
 function Team() {
   const members = [
     {
+      img: DaryllImage,
       name: "Daryll Ko",
       facebook: "",
       twitter: "",
       github: "",
+      discord: "Daryll#9517",
     },
     {
+      img: WestinImage,
       name: "Westin Maceda",
-      facebook: "",
-      twitter: "",
-      github: "",
+      facebook: "https://www.facebook.com/westin.maceda/",
+      facebookText: "westin.maceda",
+      discord: "WDTM#8951",
     },
     {
+      img: DaryllImage,
       name: "Zandrew Garais",
       facebook: "",
       twitter: "",
       github: "",
+      discord: "",
     },
   ];
   return (
@@ -34,17 +42,46 @@ function Team() {
         Hit us up if you have any questions!
       </h3>
       <div className="mb-16 flex justify-center gap-16">
-        {members.map(({ name }, index) => (
-          <div className="flex w-48 flex-col items-center" key={index}>
-            <div className="mb-8 h-48 w-48 rounded-full bg-black/50" />
-            <div className="mb-3 text-xl font-bold">{name}</div>
-            <div className="flex items-center gap-3">
-              <BsFacebook size={28} />
-              <AiFillTwitterCircle size={30} />
-              <AiFillGithub size={30} />
+        {members.map(
+          (
+            { img, name, facebook, facebookText, discord, twitter, github },
+            index
+          ) => (
+            <div className="flex w-48 flex-col items-center" key={index}>
+              <img
+                src={img}
+                alt="Profile picture"
+                className="mb-8 h-48 w-48 rounded-full"
+              />
+              <div className="mb-3 text-xl font-bold">{name}</div>
+              <div className="flex flex-col items-center gap-3">
+                {facebook && (
+                  <a
+                    href={facebook}
+                    alt="Facebook link"
+                    className="group hover:text-black"
+                  >
+                    <div className="flex items-center gap-3 rounded-full border-2 border-solid border-white px-3 py-1 group-hover:border-blue-500 group-hover:bg-white">
+                      <BsFacebook
+                        size={20}
+                        className="group-hover:text-blue-500"
+                      />
+                      <p>{facebookText}</p>
+                    </div>
+                  </a>
+                )}
+                {discord && (
+                  <div className="flex items-center gap-3 rounded-full border-2 border-solid border-[#5965f2] bg-white px-3 py-1">
+                    <BsDiscord size={20} className="text-[#5965f2]" />
+                    <p className="text-[#5965f2]">{discord}</p>
+                  </div>
+                )}
+                {twitter && <AiFillTwitterCircle size={30} />}
+                {github && <AiFillGithub size={30} />}
+              </div>
             </div>
-          </div>
-        ))}
+          )
+        )}
       </div>
       <p className="text-center">
         Ⓒ 2023 &lt;Team Name&gt;. All Rights Reserved.
