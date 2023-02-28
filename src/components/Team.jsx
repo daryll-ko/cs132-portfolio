@@ -39,7 +39,7 @@ function Team() {
       <h2 className="mb-16 text-center text-lg text-gray-300 md:text-2xl">
         Hit us up if you have any questions!
       </h2>
-      <div className="mb-16 flex justify-center gap-16">
+      <div className="mb-16 flex flex-col items-center justify-center gap-16 md:flex-row">
         {members.map(
           (
             {
