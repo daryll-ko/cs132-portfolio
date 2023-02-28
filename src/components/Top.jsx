@@ -42,10 +42,9 @@ function Top() {
           <span className="relative font-bold">
             &lt;Team Name&gt;
             <motion.span
-              initial={{ width: "0%" }}
-              animate={{ width: "100%" }}
+              whileInView={{ width: ["0%", "100%"] }}
               className="absolute left-0 -bottom-1 h-2 w-full origin-left bg-pink-500/50"
-              transition={{ duration: 2 }}
+              transition={{ duration: 1.5 }}
             ></motion.span>
           </span>
           .
