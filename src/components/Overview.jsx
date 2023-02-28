@@ -56,7 +56,7 @@ function Overview() {
           alt="GitHub repo link"
         >
           <motion.button
-            className="mx-auto rounded-md bg-blue-500 py-2 px-6 text-lg text-white"
+            className="mx-auto rounded-md bg-blue-600 py-2 px-6 text-lg text-white"
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
