@@ -9,9 +9,8 @@ function Team() {
     {
       img: DaryllImage,
       name: "Daryll Ko",
-      facebook: "",
-      twitter: "",
-      github: "",
+      github: "https://github.com/daryll-ko",
+      githubText: "daryll-ko",
       discord: "Daryll#9517",
     },
     {
@@ -44,7 +43,16 @@ function Team() {
       <div className="mb-16 flex justify-center gap-16">
         {members.map(
           (
-            { img, name, facebook, facebookText, discord, twitter, github },
+            {
+              img,
+              name,
+              github,
+              githubText,
+              facebook,
+              facebookText,
+              discord,
+              twitter,
+            },
             index
           ) => (
             <div className="flex w-48 flex-col items-center" key={index}>
@@ -55,6 +63,21 @@ function Team() {
               />
               <div className="mb-3 text-xl font-bold">{name}</div>
               <div className="flex flex-col items-center gap-3">
+                {github && (
+                  <a
+                    href={github}
+                    alt="GitHub link"
+                    className="group hover:text-black"
+                  >
+                    <div className="flex items-center gap-3 rounded-full border-2 border-solid border-white px-3 py-1 group-hover:border-black group-hover:bg-white">
+                      <AiFillGithub
+                        size={20}
+                        className="group-hover:text-black"
+                      />
+                      <p>{githubText}</p>
+                    </div>
+                  </a>
+                )}
                 {facebook && (
                   <a
                     href={facebook}
@@ -77,7 +100,6 @@ function Team() {
                   </div>
                 )}
                 {twitter && <AiFillTwitterCircle size={30} />}
-                {github && <AiFillGithub size={30} />}
               </div>
             </div>
           )
