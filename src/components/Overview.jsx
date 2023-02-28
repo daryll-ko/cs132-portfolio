@@ -1,22 +1,21 @@
 import { motion } from "framer-motion";
 
-import { AiOutlineLike } from "react-icons/ai";
-import { IoChatbubbleOutline, IoCameraOutline } from "react-icons/io5";
+import { BsLightbulb, BsQuestionCircle, BsCheck2Circle } from "react-icons/bs";
 
 function Overview() {
   const data = [
     {
-      icon: <IoChatbubbleOutline size={60} />,
+      icon: <BsLightbulb size={60} />,
       heading: "Motivation",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quos?",
     },
     {
-      icon: <IoCameraOutline size={60} />,
+      icon: <BsQuestionCircle size={60} />,
       heading: "Problem",
       text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, iure?",
     },
     {
-      icon: <AiOutlineLike size={60} />,
+      icon: <BsCheck2Circle size={60} />,
       heading: "Solution",
       text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, numquam?",
     },
@@ -40,7 +39,7 @@ function Overview() {
             transition={{ duration: 6, delay: index * 2, repeat: Infinity }}
             className="flex h-80 w-80 flex-col justify-center gap-5 rounded-md border border-solid border-black bg-white py-10"
           >
-            <div className="mx-auto w-fit text-[#ea8a94]">{icon}</div>
+            <div className="mx-auto w-fit text-pink-500">{icon}</div>
             <div>
               <h3 className="mb-3 text-2xl font-bold">{heading}</h3>
               <p className="px-2">{text}</p>
