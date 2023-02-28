@@ -28,7 +28,7 @@ function Top() {
   return (
     <section
       id="top"
-      className="min-h-screen bg-[#efefef] border-b-2 border-solid border-black py-20 px-6 sm:px-10 lg:flex lg:items-center lg:justify-center lg:gap-20 lg:px-20 lg:py-36"
+      className="min-h-screen border-b-2 border-solid border-black bg-[#efefef] py-20 px-6 sm:px-10 lg:flex lg:items-center lg:justify-center lg:gap-20 lg:px-20 lg:py-36"
     >
       <div className="relative h-48 w-48 overflow-hidden rounded-full lg:h-72 lg:w-72">
         <img

@@ -42,7 +42,7 @@ function Data() {
         {data.map(({ heading, text }, index) => (
           <div
             key={index}
-            className="h-72 w-72 rounded-md border border-solid border-black bg-white"
+            className="h-72 w-72 rounded-md border border-solid border-black bg-gray-100"
           >
             <div className="h-[65%]">
               <img

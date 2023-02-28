@@ -37,7 +37,7 @@ function Overview() {
             key={index}
             animate={{ scale: [1, 1.05, 1.05, 1, 1, 1, 1, 1, 1, 1, 1, 1] }}
             transition={{ duration: 6, delay: index * 2, repeat: Infinity }}
-            className="flex h-80 w-80 flex-col justify-center gap-5 rounded-md border border-solid border-black bg-white py-10"
+            className="flex h-80 w-80 flex-col justify-center gap-5 rounded-md border border-solid border-black bg-gray-100 py-10"
           >
             <div className="mx-auto w-fit text-pink-500">{icon}</div>
             <div>
