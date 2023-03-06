@@ -82,7 +82,7 @@ function Team() {
             index
           ) => (
             <div
-              className="flex flex-col items-center max-w-[90%] md:max-w-[75%] lg:max-w-[50%]"
+              className="flex max-w-[90%] flex-col items-center md:max-w-[75%] lg:max-w-[50%]"
               key={index}
             >
               <img
@@ -90,7 +90,12 @@ function Team() {
                 alt="Profile picture"
                 className="mb-8 h-48 w-48 rounded-full"
               />
-              <div className="text-xl font-bold">{name}</div>
+              <div className="flex items-center gap-3">
+                <div className="text-xl font-bold">{name}</div>
+                <div className="font-bold rounded-full bg-black px-2.5 py-0.5 text-xs text-[#a46c14]">
+                  WFU
+                </div>
+              </div>
               <div className="my-8">{description}</div>
               <div className="flex flex-col items-center gap-4">
                 {github && (
