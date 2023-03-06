@@ -81,7 +81,10 @@ function Team() {
             },
             index
           ) => (
-            <div className="flex max-w-[50%] flex-col items-center" key={index}>
+            <div
+              className="flex flex-col items-center max-w-[90%] md:max-w-[75%] lg:max-w-[50%]"
+              key={index}
+            >
               <img
                 src={img}
                 alt="Profile picture"

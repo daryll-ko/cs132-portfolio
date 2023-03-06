@@ -55,7 +55,7 @@ function Form() {
       <p>Thanks for submitting! :)</p>
     </div>
   ) : (
-    <div className="mx-auto mb-16 md:w-[75%] lg:w-[50%]">
+    <div className="mx-auto mb-16 md:max-w-[75%] lg:max-w-[50%]">
       <form onSubmit={handleSubmit} ref={form} className="flex flex-col gap-5">
         <div className="flex flex-col items-start gap-1">
           <label htmlFor="name" className="ml-4">
