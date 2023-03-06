@@ -3,7 +3,7 @@ import WestinImage from "../assets/westin.png";
 import ZandrewImage from "../assets/zandrew.png";
 
 import { AiFillGithub } from "react-icons/ai";
-import { BsFacebook, BsDiscord } from "react-icons/bs";
+import { BsFacebook, BsDiscord, BsFillSunFill } from "react-icons/bs";
 import Form from "./Form";
 
 function Team() {
@@ -44,7 +44,21 @@ function Team() {
       facebook: "https://www.facebook.com/westin.maceda/",
       facebookText: "westin.maceda",
       discord: "WDTM#8951",
-      description: <p></p>,
+      description: (
+        <p>
+          Hello! I'm{" "}
+          <span className="animate-pulse-light bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text font-extrabold text-transparent">
+            Westin
+          </span>
+          . I am a national scholar on my 2<sup>nd</sup> year in pursuing a
+          degree on BS Computer Science at the University of the Philippines,
+          Diliman. I am currently taking up Data Science under Professor Paul
+          Regonia. I hope to contribute in tackling fake news, which I believe
+          to be among the most pressing issues that plague our country. I aspire
+          to gain a solid foundation on fundamental concepts in computer science
+          to eventually work on aiding the Philippines as a developing nation.
+        </p>
+      ),
     },
     {
       img: ZandrewImage,
@@ -52,7 +66,19 @@ function Team() {
       facebook: "https://www.facebook.com/zandrew.molecules/",
       facebookText: "zandrew.molecules",
       discord: "zands#1665",
-      description: <p></p>,
+      description: (
+        <p>
+          Hi! I'm{" "}
+          <span className="animate-pulse-light bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text font-extrabold text-transparent">
+            Zandrew
+          </span>
+          . I am a 2<sup>nd</sup> year undergraduate student of BS Computer
+          Science in the University of the Philippines, Diliman. I am planning
+          to join data science courses offered by the DICT. I currently aim to
+          land in the field of data science, computer security, or service
+          science.
+        </p>
+      ),
     },
   ];
   return (
@@ -92,8 +118,9 @@ function Team() {
               />
               <div className="flex items-center gap-3">
                 <div className="text-xl font-bold">{name}</div>
-                <div className="font-bold rounded-full bg-black px-2.5 py-0.5 text-xs text-[#a46c14]">
-                  WFU
+                <div className="flex items-center gap-2 rounded-full bg-black px-2.5 py-0.5 text-xs font-bold text-yellow-500">
+                  <BsFillSunFill />
+                  <p>WFW</p>
                 </div>
               </div>
               <div className="my-8">{description}</div>
