@@ -47,23 +47,9 @@ function Overview() {
           </motion.div>
         ))}
       </div>
-      <p className="mb-8 text-center text-lg text-gray-700 md:text-2xl">
+      <p className="text-center text-lg text-gray-700 md:text-2xl">
         [comment about our problem]
       </p>
-      <div className="flex justify-center">
-        <a
-          href="https://github.com/daryll-ko/cs132-main"
-          alt="GitHub repo link"
-        >
-          <motion.button
-            className="mx-auto rounded-md bg-blue-600 py-2 px-6 text-lg text-white"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            Look at our data!
-          </motion.button>
-        </a>
-      </div>
     </section>
   );
 }
