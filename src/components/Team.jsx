@@ -2,7 +2,7 @@ import DaryllImage from "../assets/daryll.jpeg";
 import WestinImage from "../assets/westin.png";
 import ZandrewImage from "../assets/zandrew.png";
 
-import { AiFillTwitterCircle, AiFillGithub } from "react-icons/ai";
+import { AiFillGithub } from "react-icons/ai";
 import { BsFacebook, BsDiscord } from "react-icons/bs";
 
 function Team() {
@@ -13,6 +13,29 @@ function Team() {
       github: "https://github.com/daryll-ko",
       githubText: "daryll-ko",
       discord: "Daryll#9517",
+      description: (
+        <p>
+          Yahallo! I'm{" "}
+          <span class="animate-pulse-light bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text font-extrabold text-transparent">
+            Daryll
+          </span>
+          . I'm currently a 2<sup>nd</sup> year BS Computer Science student at
+          the University of the Philippines, Diliman. My primary fields of
+          interest are <span className="font-bold">complexity theory</span> (
+          <span className="italic">what</span> things we can do with CS),{" "}
+          <span className="font-bold">algorithms & data structures</span> (
+          <span className="italic">how</span> we do things in CS), and{" "}
+          <span className="font-bold">scientific computing</span> (
+          <span className="italic">where</span> we can apply CS). I enjoy seeing
+          theory and application work together: it fulfills me whenever I see my
+          thoughts turn into realities.
+          <br />
+          <br />
+          On the side, I enjoy reading Japanese light novels, doing algorithmic
+          problem-solving, exploring web development, and figuring out ways to
+          make my life a happier and more exciting journey.
+        </p>
+      ),
     },
     {
       img: WestinImage,
@@ -20,6 +43,7 @@ function Team() {
       facebook: "https://www.facebook.com/westin.maceda/",
       facebookText: "westin.maceda",
       discord: "WDTM#8951",
+      description: <p></p>,
     },
     {
       img: ZandrewImage,
@@ -27,6 +51,7 @@ function Team() {
       facebook: "https://www.facebook.com/zandrew.molecules/",
       facebookText: "zandrew.molecules",
       discord: "zands#1665",
+      description: <p></p>,
     },
   ];
   return (
@@ -40,7 +65,7 @@ function Team() {
       <h2 className="mb-16 text-center text-lg text-gray-300 md:text-2xl">
         Hit us up if you have any questions!
       </h2>
-      <div className="mb-16 flex flex-col items-center justify-center gap-16 md:flex-row">
+      <div className="mb-16 flex flex-col items-center justify-center gap-16">
         {members.map(
           (
             {
@@ -51,11 +76,11 @@ function Team() {
               facebook,
               facebookText,
               discord,
-              twitter,
+              description,
             },
             index
           ) => (
-            <div className="flex w-48 flex-col items-center" key={index}>
+            <div className="flex max-w-[50%] flex-col items-center" key={index}>
               <img
                 src={img}
                 alt="Profile picture"
@@ -63,6 +88,7 @@ function Team() {
               />
               <div className="mb-3 text-xl font-bold">{name}</div>
               <div className="flex flex-col items-center gap-3">
+                <div className="my-5">{description}</div>
                 {github && (
                   <a
                     href={github}
@@ -99,7 +125,6 @@ function Team() {
                     <p className="text-[#5965f2]">{discord}</p>
                   </div>
                 )}
-                {twitter && <AiFillTwitterCircle size={30} />}
               </div>
             </div>
           )
