@@ -4,6 +4,7 @@ import ZandrewImage from "../assets/zandrew.png";
 
 import { AiFillGithub } from "react-icons/ai";
 import { BsFacebook, BsDiscord } from "react-icons/bs";
+import Form from "./Form";
 
 function Team() {
   const members = [
@@ -16,7 +17,7 @@ function Team() {
       description: (
         <p>
           Yahallo! I'm{" "}
-          <span class="animate-pulse-light bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text font-extrabold text-transparent">
+          <span className="animate-pulse-light bg-gradient-to-r from-pink-500 to-purple-500 bg-clip-text font-extrabold text-transparent">
             Daryll
           </span>
           . I'm currently a 2<sup>nd</sup> year BS Computer Science student at
@@ -63,7 +64,7 @@ function Team() {
         Who <span className="italic">are</span> we?
       </h1>
       <h2 className="mb-16 text-center text-lg text-gray-300 md:text-2xl">
-        Hit us up if you have any questions!
+        Hit us up if you have any questions...
       </h2>
       <div className="mb-16 flex flex-col items-center justify-center gap-16">
         {members.map(
@@ -86,9 +87,9 @@ function Team() {
                 alt="Profile picture"
                 className="mb-8 h-48 w-48 rounded-full"
               />
-              <div className="mb-3 text-xl font-bold">{name}</div>
-              <div className="flex flex-col items-center gap-3">
-                <div className="my-5">{description}</div>
+              <div className="text-xl font-bold">{name}</div>
+              <div className="my-8">{description}</div>
+              <div className="flex flex-col items-center gap-4">
                 {github && (
                   <a
                     href={github}
@@ -130,6 +131,10 @@ function Team() {
           )
         )}
       </div>
+      <h2 className="mb-16 text-center text-lg text-gray-300 md:text-2xl">
+        ...or contact us via this form!
+      </h2>
+      <Form />
       <p className="text-center">
         Ⓒ 2023 &lt;Team Name&gt;. All Rights Reserved.
       </p>

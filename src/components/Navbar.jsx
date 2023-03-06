@@ -11,6 +11,7 @@ function Navbar() {
       <div className="grid grid-cols-3 grid-rows-2 justify-items-center gap-5 gap-7 bg-[#282828] py-3 md:flex md:items-center md:justify-center md:gap-10 md:py-5">
         {sections.map((section, index) => (
           <a
+            key={index}
             href={`#${section.toLowerCase()}`}
             className="transition-all hover:scale-110"
           >
