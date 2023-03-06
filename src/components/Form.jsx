@@ -119,7 +119,7 @@ function Form() {
           whileTap={{ scale: 0.9 }}
           disabled={!allFilled}
         >
-          Submit!
+          {!allFilled && "🔒"} Submit!
         </motion.button>
       </form>
     </div>
