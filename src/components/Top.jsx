@@ -41,27 +41,58 @@ function Top() {
       <div className="flex flex-col gap-8 lg:max-w-[60%]">
         <h1 className="text-center text-3xl md:text-5xl">
           Hi! We are{" "}
-          <span className="relative font-bold">
+          <span className="relative whitespace-nowrap font-bold">
             &lt;Team Name&gt;
             <motion.span
               whileInView={{ width: ["0%", "100%"] }}
               className="absolute left-0 -bottom-1 h-2 w-full origin-left bg-pink-500/50"
               transition={{ duration: 1.5 }}
             ></motion.span>
+            <span className="absolute -bottom-6 left-0 w-full text-xs opacity-60">
+              yes, that's our team name
+            </span>
           </span>
           .
         </h1>
-        <p className="my-3 text-center text-sm leading-6 text-gray-700 sm:text-base">
-          Lorem ipsum dolor sit,{" "}
+        <p className="mt-6 text-center text-sm leading-10 text-gray-700 sm:text-base sm:leading-[3rem]">
+          This is our project,{" "}
           <span className="font-bold">
-            Tweet Analysis of Leni Robredo's Competence as PH VP
+            Tweet Analysis on Leni Robredo's Perceived Competence as PH VP
           </span>
-          , amet consectetur adipisicing elit. Delectus modi inventore alias
-          obcaecati qui, iste nobis exercitationem deserunt magnam asperiores
-          voluptatum sit, molestiae, facere maiores eius id odio ullam illum
-          minima consequuntur quae ipsam soluta quibusdam! Eum dolor sed
-          blanditiis optio deleniti quos vel quasi? Vitae minima reprehenderit
-          deserunt veritatis.
+          . This is a data science endeavor that aims to use{" "}
+          <span className="relative">
+            relevant
+            <motion.span
+              whileInView={{ width: ["0%", "100%"] }}
+              className="absolute left-0 -bottom-1 h-1 w-full origin-left bg-purple-500/50"
+              transition={{ duration: 1.5 }}
+            ></motion.span>
+            <span className="absolute -bottom-5 left-0 w-full text-xs opacity-70">
+              2016-2022
+            </span>
+          </span>{" "}
+          Twitter data about Leni's perceived competence as Vice President
+          during her term. Using{" "}
+          <span className="bg-gradient-to-r from-[#336c9b] to-yellow-500 bg-clip-text font-extrabold text-transparent drop-shadow-md">
+            Python
+          </span>{" "}
+          and its{" "}
+          <span className="relative whitespace-nowrap">
+            army of minions
+            <motion.span
+              whileInView={{ width: ["0%", "100%"] }}
+              className="absolute left-0 -bottom-1 h-1 w-full origin-left bg-purple-500/50"
+              transition={{ duration: 1.5 }}
+            ></motion.span>
+            <span className="absolute -bottom-5 left-0 w-full text-xs opacity-70">
+              pandas & friends
+            </span>
+          </span>
+          , we'll come up with an analysis that will shed light on the state of{" "}
+          <span className="bg-gradient-to-r from-black to-red-500 bg-clip-text font-extrabold text-transparent drop-shadow-md">
+            truth
+          </span>{" "}
+          in Twitter's Filipino landscape.
         </p>
         <div className="flex flex-col items-center justify-center gap-5 md:flex-row lg:flex-col xl:flex-row">
           {members.map(({ img, firstName, lastName, section }, index) => (
