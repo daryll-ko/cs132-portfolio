@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 
+import { BsFillSunFill } from "react-icons/bs";
+
 import LeniImage from "../assets/leni.jpg";
 import DaryllImage from "../assets/daryll.jpeg";
 import WestinImage from "../assets/westin.png";
@@ -130,7 +132,8 @@ function Top() {
                 <p>{lastName},</p>
                 <p>{firstName}</p>
               </div>
-              <div className="rounded-full bg-gray-400/60 px-2.5 py-0.5 text-xs">
+              <div className="flex items-center gap-2 rounded-full bg-gray-400/60 px-2.5 py-0.5 text-xs">
+                <BsFillSunFill />
                 {section}
               </div>
             </motion.div>
