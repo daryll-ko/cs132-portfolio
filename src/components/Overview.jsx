@@ -90,7 +90,7 @@ function Overview() {
           <h3 className="mb-5 text-2xl font-bold">Research Question</h3>
           <p>
             Were tweets asserting Leni's incompetence as VP more likely to
-            mention support for an opposing political member or party?
+            mention support for an opposing political entity?
           </p>
         </div>
         <div className="w-full rounded-md border border-solid border-black bg-gray-100 py-10 px-10 md:max-w-[40rem]">
@@ -100,8 +100,8 @@ function Overview() {
           <p>
             Tweets asserting Leni's incompetence as VP were{" "}
             <span className="font-bold">equally likely</span> to explicitly show
-            support for an opposing political party and to not show support for
-            any opposing political party.{" "}
+            support for an opposing political entity and to not show support for
+            any opposing political entity.{" "}
           </p>
         </div>
         <div className="w-full rounded-md border border-solid border-black bg-gray-100 py-10 px-10 md:max-w-[40rem]">
@@ -111,7 +111,7 @@ function Overview() {
           <p>
             Tweets asserting Leni's incompetence as VP were{" "}
             <span className="font-bold">more likely</span> to explicitly show
-            support for an opposing political party.{" "}
+            support for an opposing political entity.{" "}
           </p>
         </div>
         <div className="w-full rounded-md border border-solid border-black bg-gray-100 py-10 px-10 md:max-w-[40rem]">
