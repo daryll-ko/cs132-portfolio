@@ -1,8 +1,25 @@
-import { motion } from "framer-motion";
+import { motion, useMotionValue, useTransform } from "framer-motion";
 
 import { BsLightbulb, BsQuestionCircle, BsCheck2Circle } from "react-icons/bs";
 
 function Overview() {
+  const x = useMotionValue(150);
+  const y = useMotionValue(75);
+
+  const rotateX = useTransform(y, [0, 150], [45, -45]);
+  const rotateY = useTransform(x, [0, 300], [-45, 45]);
+
+  function handleMouse(event) {
+    const rect = event.currentTarget.getBoundingClientRect();
+    x.set(event.clientX - rect.left);
+    y.set(event.clientY - rect.top);
+  }
+
+  function resetMouse() {
+    x.set(150);
+    y.set(75);
+  }
+
   const data = [
     {
       icon: <BsLightbulb size={60} />,
@@ -47,9 +64,42 @@ function Overview() {
           </motion.div>
         ))}
       </div>
-      <p className="text-center text-lg text-gray-700 md:text-2xl">
-        [comment about our problem]
-      </p>
+      <motion.div
+        className="mx-auto mb-16 flex h-[150px] w-[300px] items-center justify-center rounded-md border-2 border-dashed border-black bg-gray-100"
+        onMouseMove={handleMouse}
+        onMouseLeave={resetMouse}
+        style={{ perspective: 300 }}
+      >
+        <motion.div
+          className="flex h-[100px] w-[200px] items-center justify-center"
+          style={{
+            rotateX: rotateX,
+            rotateY: rotateY,
+          }}
+        >
+          <motion.p className="text-center text-lg">
+            What will we be looking at?
+          </motion.p>
+        </motion.div>
+      </motion.div>
+      <div className="flex flex-col items-center gap-10">
+        <div className="w-[40rem] rounded-md border border-solid border-black bg-gray-100 py-10 px-10">
+          <h3 className="text-2xl font-bold">Research Question</h3>
+          <p></p>
+        </div>
+        <div className="w-[40rem] rounded-md border border-solid border-black bg-gray-100 py-10 px-10">
+          <h3 className="text-2xl font-bold">Null Hypothesis</h3>
+          <p></p>
+        </div>
+        <div className="w-[40rem] rounded-md border border-solid border-black bg-gray-100 py-10 px-10">
+          <h3 className="text-2xl font-bold">Alternative Hypothesis</h3>
+          <p></p>
+        </div>
+        <div className="w-[40rem] rounded-md border border-solid border-black bg-gray-100 py-10 px-10">
+          <h3 className="text-2xl font-bold">Action Plan</h3>
+          <p></p>
+        </div>
+      </div>
     </section>
   );
 }
