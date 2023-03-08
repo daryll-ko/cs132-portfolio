@@ -3,12 +3,14 @@ import { motion } from "framer-motion";
 import RegressionImage from "../assets/regression.jpeg";
 import BarGraph from "../assets/bar-graph.jpeg";
 
+import { InlineMath } from "react-katex";
+
 function Results() {
   const data = [
     {
       image: RegressionImage,
       heading: "Correlation",
-      text: "y = mx + b",
+      text: <InlineMath math="y = mx + b" />,
     },
     {
       image: BarGraph,

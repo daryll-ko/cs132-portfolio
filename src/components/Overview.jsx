@@ -2,7 +2,6 @@ import { motion, useMotionValue, useTransform } from "framer-motion";
 
 import { BsLightbulb, BsQuestionCircle, BsCheck2Circle } from "react-icons/bs";
 
-import "katex/dist/katex.min.css";
 import { InlineMath } from "react-katex";
 
 function Overview() {
