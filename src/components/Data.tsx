@@ -53,9 +53,7 @@ function Data() {
         [additional description about our data]
       </p>
       <div className="flex justify-center">
-        <a
-          href="https://github.com/daryll-ko/cs132-main"
-        >
+        <a href="https://github.com/daryll-ko/cs132-main">
           <motion.button
             className="mx-auto rounded-md bg-blue-600 py-2 px-6 text-lg text-white"
             whileHover={{ scale: 1.1 }}
