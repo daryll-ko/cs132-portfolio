@@ -76,7 +76,7 @@ function Top() {
               className="absolute left-0 -bottom-1 h-1 w-full origin-left bg-purple-500/50"
               transition={{ duration: 1.5 }}
             ></motion.span>
-            <span className="absolute -bottom-5 left-0 w-full text-xs opacity-70">
+            <span className="absolute -bottom-5 left-0 w-full text-xs opacity-90">
               2016-2022
             </span>
           </span>{" "}
@@ -93,7 +93,7 @@ function Top() {
               className="absolute left-0 -bottom-1 h-1 w-full origin-left bg-purple-500/50"
               transition={{ duration: 1.5 }}
             ></motion.span>
-            <span className="absolute -bottom-5 left-0 w-full text-xs opacity-70">
+            <span className="absolute -bottom-5 left-0 w-full text-xs opacity-90">
               pandas & friends
             </span>
           </span>
