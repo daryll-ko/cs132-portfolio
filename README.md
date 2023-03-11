@@ -9,6 +9,6 @@ Topic • Analysis of tweets during the pandemic suggesting Leni Robredo's incom
 ## Stack
 
 - [React.js](https://reactjs.org/) as frontend framework
-- [TailwindCSS](https://tailwindcss.com/) for styling
+- [Tailwind CSS](https://tailwindcss.com/) for styling
 - [Framer Motion](https://www.framer.com/motion/) for animations
 - [Vite](https://vitejs.dev/) for tooling
