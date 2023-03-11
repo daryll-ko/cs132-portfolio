@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 // Reference: https://hackernoon.com/integrating-a-contact-form-with-emailjs-in-react
 
 function Form() {
-  const form = useRef();
+  const form = useRef<HTMLFormElement>(null);
 
   const [submitted, setSubmitted] = useState(false);
   const [inputState, setInputState] = useState({
@@ -15,32 +15,36 @@ function Form() {
     message: "",
   });
 
-  const handleInputChange = (input) => (e) => {
-    const { value } = e.target;
+  const handleInputChange =
+    (input: string) =>
+    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+      const { value } = e.target;
 
-    setInputState((prevState) => ({
-      ...prevState,
-      [input]: value,
-    }));
-  };
+      setInputState((prevState) => ({
+        ...prevState,
+        [input]: value,
+      }));
+    };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        import.meta.env.VITE_REACT_APP_SERVICE_ID,
-        import.meta.env.VITE_REACT_APP_TEMPLATE_ID,
-        form.current,
-        import.meta.env.VITE_REACT_APP_PUBLIC_KEY
-      )
-      .then(
-        (result) => {
-          setSubmitted(true);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (form.current) {
+      emailjs
+        .sendForm(
+          import.meta.env.VITE_REACT_APP_SERVICE_ID,
+          import.meta.env.VITE_REACT_APP_TEMPLATE_ID,
+          form.current,
+          import.meta.env.VITE_REACT_APP_PUBLIC_KEY
+        )
+        .then(
+          (result) => {
+            setSubmitted(true);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
 
   const allFilled =

@@ -55,7 +55,6 @@ function Data() {
       <div className="flex justify-center">
         <a
           href="https://github.com/daryll-ko/cs132-main"
-          alt="GitHub repo link"
         >
           <motion.button
             className="mx-auto rounded-md bg-blue-600 py-2 px-6 text-lg text-white"

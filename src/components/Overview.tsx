@@ -11,10 +11,10 @@ function Overview() {
   const rotateX = useTransform(y, [0, 150], [45, -45]);
   const rotateY = useTransform(x, [0, 300], [-45, 45]);
 
-  function handleMouse(event) {
-    const rect = event.currentTarget.getBoundingClientRect();
-    x.set(event.clientX - rect.left);
-    y.set(event.clientY - rect.top);
+  function handleMouse(e: React.MouseEvent<HTMLDivElement>) {
+    const rect = e.currentTarget.getBoundingClientRect();
+    x.set(e.clientX - rect.left);
+    y.set(e.clientY - rect.top);
   }
 
   function resetMouse() {
@@ -39,6 +39,7 @@ function Overview() {
       text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, numquam?",
     },
   ];
+
   return (
     <section
       id="overview"

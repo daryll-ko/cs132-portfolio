@@ -7,8 +7,15 @@ import DaryllImage from "../assets/daryll.jpeg";
 import WestinImage from "../assets/westin.png";
 import ZandrewImage from "../assets/zandrew.png";
 
+interface Member {
+  img: string;
+  firstName: string;
+  lastName: string;
+  section: string;
+}
+
 function Top() {
-  const members = [
+  const members: Member[] = [
     {
       img: DaryllImage,
       firstName: "Daryll",

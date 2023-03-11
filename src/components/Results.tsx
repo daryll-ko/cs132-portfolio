@@ -5,8 +5,14 @@ import BarGraph from "../assets/bar-graph.jpeg";
 
 import { InlineMath } from "react-katex";
 
+interface Data {
+  image: string;
+  heading: string;
+  text: string | JSX.Element;
+}
+
 function Results() {
-  const data = [
+  const data: Data[] = [
     {
       image: RegressionImage,
       heading: "Correlation",
@@ -46,10 +52,7 @@ function Results() {
         Want to know more? Check out our GitHub repo!
       </p>
       <div className="flex justify-center">
-        <a
-          href="https://github.com/daryll-ko/cs132-main"
-          alt="GitHub repo link"
-        >
+        <a href="https://github.com/daryll-ko/cs132-main">
           <motion.button
             className="mx-auto rounded-md bg-blue-600 py-2 px-6 text-lg text-white"
             whileHover={{ scale: 1.1 }}

@@ -6,8 +6,19 @@ import { AiFillGithub } from "react-icons/ai";
 import { BsFacebook, BsDiscord, BsFillSunFill } from "react-icons/bs";
 import Form from "./Form";
 
+interface Member {
+  img: string;
+  name: string;
+  github?: string;
+  githubText?: string;
+  facebook?: string;
+  facebookText?: string;
+  discord: string;
+  description: JSX.Element;
+}
+
 function Team() {
-  const members = [
+  const members: Member[] = [
     {
       img: DaryllImage,
       name: "Daryll Ko",
@@ -126,11 +137,7 @@ function Team() {
               <div className="my-8">{description}</div>
               <div className="flex flex-col items-center gap-4">
                 {github && (
-                  <a
-                    href={github}
-                    alt="GitHub link"
-                    className="group hover:text-black"
-                  >
+                  <a href={github} className="group hover:text-black">
                     <div className="flex items-center gap-3 rounded-full border-2 border-solid border-white px-3 py-1 group-hover:border-black group-hover:bg-white">
                       <AiFillGithub
                         size={20}
@@ -141,11 +148,7 @@ function Team() {
                   </a>
                 )}
                 {facebook && (
-                  <a
-                    href={facebook}
-                    alt="Facebook link"
-                    className="group hover:text-black"
-                  >
+                  <a href={facebook} className="group hover:text-black">
                     <div className="flex items-center gap-3 rounded-full border-2 border-solid border-white px-3 py-1 group-hover:border-blue-500 group-hover:bg-white">
                       <BsFacebook
                         size={20}
