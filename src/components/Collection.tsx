@@ -53,17 +53,18 @@ function Collection() {
         [additional description about our data]
       </p>
       <div className="flex justify-center">
-        <a href="https://github.com/daryll-ko/cs132-main">
-          <motion.button
-            className="mx-auto rounded-md bg-blue-600 py-2 px-6 text-lg text-white"
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
+        <motion.button
+          className="mx-auto rounded-md bg-blue-600 py-2 px-6 text-lg text-white"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <a
+            href="https://docs.google.com/spreadsheets/d/1xeTTNx1zVFSfcaIIqL7B2uOQ3gnYt_L5z_ioXfwIL5Q/edit#gid=107810933"
+            target="_blank"
           >
-            <a href="https://docs.google.com/spreadsheets/d/1xeTTNx1zVFSfcaIIqL7B2uOQ3gnYt_L5z_ioXfwIL5Q/edit#gid=107810933" target="_blank">
-              Look at our data!
-            </a>
-          </motion.button>
-        </a>
+            Look at our data!
+          </a>
+        </motion.button>
       </div>
     </section>
   );
