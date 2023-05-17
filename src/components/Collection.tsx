@@ -59,7 +59,9 @@ function Collection() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            Look at our data!
+            <a href="https://docs.google.com/spreadsheets/d/1xeTTNx1zVFSfcaIIqL7B2uOQ3gnYt_L5z_ioXfwIL5Q/edit#gid=107810933" target="_blank">
+              Look at our data!
+            </a>
           </motion.button>
         </a>
       </div>

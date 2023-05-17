@@ -49,7 +49,15 @@ function Exploration() {
         ))}
       </div>
       <p className="text-center text-lg text-gray-700 md:text-2xl">
-        [description about our tools]
+        <motion.button
+          className="mx-auto rounded-md bg-blue-600 py-2 px-6 text-lg text-white"
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <a href="https://cs-132-portfolio-data-exploration.netlify.app/" target="_blank">
+            See our data exploration tour!
+          </a>
+        </motion.button>
       </p>
     </section>
   );
