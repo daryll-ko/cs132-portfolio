@@ -7,8 +7,8 @@ function Navbar() {
   const sections = [
     "Top",
     "Overview",
-    "Data Collection",
-    "Data Exploration",
+    "Collection",
+    "Exploration",
     "Results",
     "Team",
   ];
