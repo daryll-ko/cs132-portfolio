@@ -1,7 +1,7 @@
 import Top from "./Top";
 import Overview from "./Overview";
-import Data from "./Data";
-import Methods from "./Methods";
+import Collection from "./Collection";
+import Exploration from "./Exploration";
 import Results from "./Results";
 import Team from "./Team";
 import Navbar from "./Navbar";
@@ -12,8 +12,8 @@ function App() {
       <Navbar />
       <Top />
       <Overview />
-      <Data />
-      <Methods />
+      <Collection />
+      <Exploration />
       <Results />
       <Team />
     </div>

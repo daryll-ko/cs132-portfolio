@@ -4,7 +4,14 @@ function Navbar() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress);
 
-  const sections = ["Top", "Overview", "Data", "Methods", "Results", "Team"];
+  const sections = [
+    "Top",
+    "Overview",
+    "Data Collection",
+    "Data Exploration",
+    "Results",
+    "Team",
+  ];
 
   return (
     <div className="sticky top-0 z-50">
@@ -12,7 +19,7 @@ function Navbar() {
         {sections.map((section, index) => (
           <a
             key={index}
-            href={`#${section.toLowerCase()}`}
+            href={`#${section.toLowerCase().split(" ").join("_")}`}
             className="transition-all hover:scale-110"
           >
             <div

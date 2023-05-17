@@ -4,7 +4,7 @@ import SampleGradient from "../assets/sample-gradient.jpeg";
 import SampleGradient2 from "../assets/sample-gradient-2.jpeg";
 import SampleGradient3 from "../assets/sample-gradient-3.jpeg";
 
-function Data() {
+function Collection() {
   const data = [
     {
       img: SampleGradient,
@@ -24,7 +24,7 @@ function Data() {
   ];
   return (
     <section
-      id="data"
+      id="data_collection"
       className="border-b-2 border-solid border-black bg-[#efefef] py-20 px-6 sm:px-10 lg:px-16"
     >
       <h1 className="mb-6 text-center text-3xl font-bold md:text-5xl">
@@ -67,4 +67,4 @@ function Data() {
   );
 }
 
-export default Data;
+export default Collection;
