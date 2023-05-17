@@ -54,7 +54,10 @@ function Exploration() {
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
         >
-          <a href="https://cs-132-portfolio-data-exploration.netlify.app/" target="_blank">
+          <a
+            href="https://cs-132-portfolio-data-exploration.netlify.app/"
+            target="_blank"
+          >
             See our data exploration tour!
           </a>
         </motion.button>
