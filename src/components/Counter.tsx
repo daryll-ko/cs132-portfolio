@@ -9,16 +9,16 @@ interface Props {
 }
 
 function Counter({ from, to }: Props) {
-  const nodeRef = useRef<HTMLParagraphElement>(null);
+  const nodeRef = useRef<HTMLSpanElement>(null);
 
   useEffect(() => {
     const node = nodeRef.current;
 
     const controls = animate(from, to, {
-      duration: 1,
+      duration: 1.5,
       onUpdate(value) {
         if (node) {
-          node.textContent = value.toFixed(2);
+          node.textContent = value.toFixed(0);
         }
       },
     });
@@ -26,7 +26,7 @@ function Counter({ from, to }: Props) {
     return () => controls.stop();
   }, [from, to]);
 
-  return <p ref={nodeRef} />;
+  return <span ref={nodeRef} />;
 }
 
 export default Counter;
