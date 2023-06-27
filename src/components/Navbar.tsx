@@ -17,7 +17,7 @@ function Navbar() {
 
   return (
     <div className="sticky top-0 z-50">
-      <div className="grid grid-cols-3 grid-rows-2 justify-items-center gap-5 gap-7 bg-[#282828] py-3 md:flex md:items-center md:justify-center md:gap-10 md:py-5">
+      <div className="grid grid-cols-2 justify-items-center gap-5 gap-7 bg-[#282828] py-3 lg:flex lg:items-center lg:justify-center lg:gap-10 lg:py-5">
         {sections.map((section, index) => (
           <a
             key={index}
