@@ -71,21 +71,9 @@ function Overview() {
           </motion.div>
         ))}
       </div>
-      <motion.div
-        className="mx-auto mb-16 flex h-[150px] w-[300px] items-center justify-center rounded-md border-2 border-dashed border-black bg-gray-100"
-        onMouseMove={handleMouse}
-        onMouseLeave={resetMouse}
-        style={{ perspective: 300 }}
-      >
-        <motion.div
-          className="flex h-[100px] w-[200px] items-center justify-center"
-          style={{ rotateX, rotateY }}
-        >
-          <motion.p className="text-center text-lg">
-            What will we be looking at?
-          </motion.p>
-        </motion.div>
-      </motion.div>
+      <p className="my-16 text-center text-lg">
+        What will we be looking at?
+      </p>
       <div className="flex flex-col items-center gap-10">
         <div className="w-full rounded-md border border-solid border-black bg-gray-100 py-10 px-10 md:max-w-[40rem]">
           <h3 className="mb-5 text-2xl font-bold">Research Question</h3>
