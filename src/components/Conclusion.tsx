@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 
+import CelebrationImage from "../assets/celebration.png";
 import RegressionImage from "../assets/regression.jpeg";
 import BarGraph from "../assets/bar-graph.jpeg";
 
@@ -30,10 +31,10 @@ function Conclusion() {
       className="bg-[#efefef] py-20 px-6 sm:px-10 lg:px-16"
     >
       <h1 className="mb-8 text-center text-3xl font-bold md:text-5xl">
-        What did we find out?
+        Now what?
       </h1>
       <h2 className="text-center text-lg text-gray-700 md:text-2xl">
-        [description about our results]
+        [anong silbi ng research natin]
       </h2>
       <div className="mx-auto my-16 flex max-w-5xl flex-wrap justify-center gap-10 text-center">
         {data.map(({ image, heading, text }, index) => (
@@ -64,6 +65,10 @@ function Conclusion() {
             Look at our repo!
           </motion.button>
         </a>
+      </div>
+      <div className="mt-16 flex flex-col items-center justify-center gap-10 text-lg text-gray-700 md:text-2xl">
+        <img src={CelebrationImage} className="h-96 rounded-xl" />
+        <p>Thanks for visiting! :)</p>
       </div>
     </section>
   );
