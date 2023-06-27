@@ -65,10 +65,8 @@ function Top() {
         </h1>
         <p className="mt-6 text-center text-sm leading-10 text-gray-700 sm:text-base sm:leading-[3rem]">
           This is our project,{" "}
-          <span className="font-bold">
-            Tweet Analysis on Leni Robredo's Perceived Competence as PH VP
-          </span>
-          . This is a data science endeavor that aims to use{" "}
+          <span className="font-bold">Time-Bound Deception</span>. This is a
+          data science endeavor that aims to use{" "}
           <span className="relative">
             relevant
             <motion.span
@@ -80,8 +78,7 @@ function Top() {
               2016-2022
             </span>
           </span>{" "}
-          Twitter data about Leni's perceived competence as Vice President
-          during her term. Using{" "}
+          Twitter data about Leni during her term as Vice President. Using{" "}
           <span className="bg-gradient-to-r from-[#336c9b] to-yellow-500 bg-clip-text font-extrabold text-transparent drop-shadow-md">
             Python
           </span>{" "}
