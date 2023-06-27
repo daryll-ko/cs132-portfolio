@@ -119,8 +119,8 @@ function Form() {
         <motion.button
           type="submit"
           className="mx-auto mt-8 rounded-md bg-blue-600 py-2 px-6 text-lg text-white"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
+          whileHover={{ scale: allFilled ? 1.1 : 1 }}
+          whileTap={{ scale: allFilled ? 0.9 : 1 }}
           disabled={!allFilled}
         >
           {!allFilled && "🔒"} Submit!
