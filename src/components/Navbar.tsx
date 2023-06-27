@@ -9,6 +9,7 @@ function Navbar() {
     "Overview",
     "Collection",
     "Exploration",
+    "Modeling",
     "Results",
     "Team",
   ];
