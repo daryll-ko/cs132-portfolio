@@ -54,7 +54,9 @@ function Overview() {
           </motion.div>
         ))}
       </div>
-      <p className="my-16 text-center text-lg">What will we be looking at?</p>
+      <p className="my-16 text-center text-lg text-gray-700">
+        What will we be looking at?
+      </p>
       <div className="flex flex-col items-center gap-10">
         <div className="w-full rounded-md border border-solid border-black bg-gray-100 py-10 px-10 md:max-w-[40rem]">
           <h3 className="mb-5 text-2xl font-bold">Research Question</h3>
