@@ -1,25 +1,23 @@
-import { motion, useMotionValue, useTransform } from "framer-motion";
+import { motion } from "framer-motion";
 
-import { BsLightbulb, BsQuestionCircle, BsCheck2Circle } from "react-icons/bs";
+import { BsTwitter, BsHourglassSplit } from "react-icons/bs";
+import { HiMagnifyingGlass } from "react-icons/hi2";
 
 import { InlineMath } from "react-katex";
 
 function Overview() {
   const data = [
     {
-      icon: <BsLightbulb size={60} />,
-      heading: "Motivation",
-      text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, quos?",
+      icon: <BsTwitter size={60} />,
+      text: "Twitter has become a prime breeding ground for disinformation campaigns involving political figures.",
     },
     {
-      icon: <BsQuestionCircle size={60} />,
-      heading: "Problem",
-      text: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, iure?",
+      icon: <BsHourglassSplit size={60} />,
+      text: "Understanding the temporal patterns of disinformation is crucial in combating its impact on public perception.",
     },
     {
-      icon: <BsCheck2Circle size={60} />,
-      heading: "Solution",
-      text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor, numquam?",
+      icon: <HiMagnifyingGlass size={60} />,
+      text: "Our research focuses on Leni-related disinformation, utilizing scraped tweets to uncover temporal patterns.",
     },
   ];
 
@@ -39,30 +37,27 @@ function Overview() {
         is in danger.
       </h2>
       <div className="my-16 flex flex-wrap justify-center gap-10 text-center">
-        {data.map(({ icon, heading, text }, index) => (
+        {data.map(({ icon, text }, index) => (
           <motion.div
             key={index}
             animate={{ scale: [1, 1.05, 1.05, 1, 1, 1, 1, 1, 1, 1, 1, 1] }}
             transition={{ duration: 6, delay: index * 2, repeat: Infinity }}
             className="flex h-80 w-80 flex-col justify-center gap-5 rounded-md border border-solid border-black bg-gray-100 py-10"
           >
-            <div className="mx-auto w-fit text-pink-500">{icon}</div>
-            <div>
-              <h3 className="mb-3 text-2xl font-bold">{heading}</h3>
-              <p className="px-2">{text}</p>
-            </div>
+            <div className="mx-auto w-fit text-[#e01190]">{icon}</div>
+            <div className="px-2">{text}</div>
           </motion.div>
         ))}
       </div>
-      <p className="my-16 text-center text-lg text-gray-700">
-        What will we be looking at?
+      <p className="my-16 text-center text-lg font-bold text-gray-700 md:text-2xl">
+        What's the plan?
       </p>
       <div className="flex flex-col items-center gap-10">
         <div className="w-full rounded-md border border-solid border-black bg-gray-100 py-10 px-10 md:max-w-[40rem]">
           <h3 className="mb-5 text-2xl font-bold">Research Question</h3>
           <p>
-            Were tweets asserting Leni's incompetence as VP more likely to
-            mention support for an opposing political entity?
+            Did topics surfacing from Leni disinformation tweets have increasing
+            trends over time?
           </p>
         </div>
         <div className="w-full rounded-md border border-solid border-black bg-gray-100 py-10 px-10 md:max-w-[40rem]">
@@ -70,10 +65,8 @@ function Overview() {
             Null Hypothesis <InlineMath math="H_{0}" />
           </h3>
           <p>
-            Tweets asserting Leni's incompetence as VP were{" "}
-            <span className="font-bold">equally likely</span> to explicitly show
-            support for an opposing political entity and to not show support for
-            any opposing political entity.{" "}
+            <span className="font-bold">All</span> topics had{" "}
+            <span className="font-bold">stable trends</span> over time.
           </p>
         </div>
         <div className="w-full rounded-md border border-solid border-black bg-gray-100 py-10 px-10 md:max-w-[40rem]">
@@ -81,9 +74,8 @@ function Overview() {
             Alternative Hypothesis <InlineMath math="H_{a}" />
           </h3>
           <p>
-            Tweets asserting Leni's incompetence as VP were{" "}
-            <span className="font-bold">more likely</span> to explicitly show
-            support for an opposing political entity.{" "}
+            <span className="font-bold">Some</span> topics had an{" "}
+            <span className="font-bold">increasing trend</span> over time.
           </p>
         </div>
         <div className="w-full rounded-md border border-solid border-black bg-gray-100 py-10 px-10 md:max-w-[40rem]">
@@ -93,12 +85,11 @@ function Overview() {
             <span className="bg-gradient-to-r from-[#336c9b] to-yellow-500 bg-clip-text font-extrabold text-transparent drop-shadow-md">
               Python
             </span>{" "}
-            to extract common words, phrases, or textual properties in our
-            dataset.
+            to extract common themes in our dataset.
             <br />
             <br />
-            Using statistical tools, we'll come up with conclusions that will
-            help us see the big picture.
+            Using tools from statistics and machine learning, we'll come up with
+            conclusions that will help us see the big picture.
           </p>
         </div>
       </div>
