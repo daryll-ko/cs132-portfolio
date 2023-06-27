@@ -59,7 +59,7 @@ function Exploration() {
             key={index}
             className="h-80 w-80 overflow-hidden rounded-md border border-solid border-black bg-gray-100"
           >
-            <div className="flex h-[50%] flex-col justify-center border-b border-solid border-black bg-white">
+            <div className="flex h-[50%] flex-col justify-center border-b border-solid border-black bg-white py-3">
               <motion.img
                 src={image}
                 alt="Sample gradient"
