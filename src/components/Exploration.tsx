@@ -1,13 +1,13 @@
 import { motion } from "framer-motion";
 
-import TwitterImage from "../assets/twitter.png";
-import PythonImage from "../assets/python.png";
-import StockImage from "../assets/sample-gradient.jpeg";
+import ExplorationImage from "../assets/exploration.png";
+import HeatmapExploration from "../assets/heatmap_exploration.png";
+import Storybook from "../assets/storybook.png";
 
 function Exploration() {
   const data = [
     {
-      image: TwitterImage,
+      image: ExplorationImage,
       heading: "Preprocessing",
       text: (
         <p>
@@ -18,7 +18,7 @@ function Exploration() {
       ),
     },
     {
-      image: PythonImage,
+      image: HeatmapExploration,
       heading: "Visualization",
       text: (
         <p>
@@ -28,9 +28,14 @@ function Exploration() {
       ),
     },
     {
-      image: StockImage,
+      image: Storybook,
       heading: "Storytelling",
-      text: "Our exploration process is laid out in a way to keep the reader engaged in the process.",
+      text: (
+        <p>
+          Our exploration process is laid out in a way to keep the reader{" "}
+          <b>engaged</b> in the process.
+        </p>
+      ),
     },
   ];
   return (
@@ -52,14 +57,14 @@ function Exploration() {
         {data.map(({ image, heading, text }, index) => (
           <div
             key={index}
-            className="h-80 w-80 rounded-md border border-solid border-black bg-gray-100"
+            className="h-80 w-80 overflow-hidden rounded-md border border-solid border-black bg-gray-100"
           >
-            <div className="flex h-[50%] items-center justify-center border-b border-solid border-black">
+            <div className="flex h-[50%] flex-col justify-center border-b border-solid border-black bg-white">
               <motion.img
                 src={image}
                 alt="Sample gradient"
-                whileInView={{ rotate: [0, 15, -7.5, 0] }}
-                className="h-full"
+                whileInView={{ rotate: [0, 7.5, -7.5, 0] }}
+                className="mx-auto max-h-full"
               />
             </div>
             <div className="flex h-[50%] flex-col justify-center gap-2">
