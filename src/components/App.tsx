@@ -6,6 +6,7 @@ import Results from "./Results";
 import Team from "./Team";
 import Navbar from "./Navbar";
 import Modeling from "./Modeling";
+import Conclusion from "./Conclusion";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Exploration />
       <Modeling />
       <Results />
+      <Conclusion />
       <Team />
     </div>
   );

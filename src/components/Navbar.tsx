@@ -11,6 +11,7 @@ function Navbar() {
     "Exploration",
     "Modeling",
     "Results",
+    "Conclusion",
     "Team",
   ];
 
