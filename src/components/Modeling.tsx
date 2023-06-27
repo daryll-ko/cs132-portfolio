@@ -79,7 +79,7 @@ function Modeling() {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
           >
-            See our data exploration tour!
+            See our data modeling tour!
           </motion.button>
         </a>
       </p>
