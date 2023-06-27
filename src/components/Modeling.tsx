@@ -69,19 +69,19 @@ function Modeling() {
           </div>
         ))}
       </div>
-      <p className="text-center text-lg text-gray-700 md:text-2xl">
-        <motion.button
-          className="mx-auto rounded-md bg-blue-600 py-2 px-6 text-lg text-white"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
+      <p className="text-center text-lg md:text-2xl">
+        <a
+          href="https://cs-132-portfolio-data-exploration.netlify.app/"
+          target="_blank"
         >
-          <a
-            href="https://cs-132-portfolio-data-exploration.netlify.app/"
-            target="_blank"
+          <motion.button
+            className="mx-auto rounded-md bg-blue-600 py-2 px-6 text-lg text-white"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
-            See our data modeling tour!
-          </a>
-        </motion.button>
+            See our data exploration tour!
+          </motion.button>
+        </a>
       </p>
     </section>
   );
