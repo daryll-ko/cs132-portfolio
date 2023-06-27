@@ -1,36 +1,29 @@
 import { motion } from "framer-motion";
 
-import TwitterImage from "../assets/twitter.png";
-import PythonImage from "../assets/python.png";
-import StockImage from "../assets/sample-gradient.jpeg";
+import LDAImage from "../assets/lda.png";
+import RegressionImage from "../assets/regression.png";
 
 function Modeling() {
   const data = [
     {
-      image: TwitterImage,
-      heading: "Preprocessing",
+      image: LDAImage,
+      heading: "LDA",
       text: (
         <p>
-          We applied all kinds of techniques, from{" "}
-          <b>handling missing values</b> to doing some{" "}
-          <b>natural language processing</b>!
+          We used <b>Latent Dirichlet Allocation (LDA)</b> to cluster our tweets
+          into different topics.
         </p>
       ),
     },
     {
-      image: PythonImage,
-      heading: "Visualization",
+      image: RegressionImage,
+      heading: "Regression",
       text: (
         <p>
-          We used <b>Plotly</b> to generate <b>interactive</b> plots about
-          different kinds of relationships within our data.
+          We then used multiple <b>linear regressions</b> against time to
+          observe our clusters' trends.
         </p>
       ),
-    },
-    {
-      image: StockImage,
-      heading: "Storytelling",
-      text: "Our exploration process is laid out in a way to keep the reader engaged in the process.",
     },
   ];
   return (
@@ -52,14 +45,14 @@ function Modeling() {
         {data.map(({ image, heading, text }, index) => (
           <div
             key={index}
-            className="h-80 w-80 rounded-md border border-solid border-black bg-gray-100"
+            className="h-80 w-80 overflow-hidden rounded-md border border-solid border-black bg-gray-100"
           >
-            <div className="flex h-[50%] items-center justify-center border-b border-solid border-black">
+            <div className="flex h-[50%] flex-col justify-center border-b border-solid border-black bg-white py-3">
               <motion.img
                 src={image}
                 alt="Sample gradient"
-                whileInView={{ rotate: [0, 15, -7.5, 0] }}
-                className="h-full"
+                whileInView={{ rotate: [0, 7.5, -7.5, 0] }}
+                className="mx-auto max-h-full"
               />
             </div>
             <div className="flex h-[50%] flex-col justify-center gap-2">
@@ -71,7 +64,7 @@ function Modeling() {
       </div>
       <p className="text-center text-lg md:text-2xl">
         <a
-          href="https://cs-132-portfolio-data-exploration.netlify.app/"
+          href="https://cs-132-portfolio-data-modeling.netlify.app/"
           target="_blank"
         >
           <motion.button
