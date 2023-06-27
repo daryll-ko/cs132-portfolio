@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import Twint from "../assets/twint.png";
 import Curation from "../assets/curation.png";
 import ManualLabeling from "../assets/manual_labeling.png";
+import Plus from "../assets/plus.png";
 import Counter from "./Counter";
 
 function Collection() {
@@ -44,6 +45,16 @@ function Collection() {
         </p>
       ),
     },
+    {
+      img: Plus,
+      heading: "Additional data",
+      text: (
+        <p>
+          We also took in data from Groups <b>14</b>, <b>31</b>, and <b>34</b>{" "}
+          to make our results better. Thanks to these groups for their data!
+        </p>
+      ),
+    },
   ];
   return (
     <section
@@ -81,8 +92,8 @@ function Collection() {
         ))}
       </div>
       <p className="mb-8 text-center text-lg text-gray-700 md:text-2xl">
-        We collected <Counter from={0} to={150} /> data points to be used for
-        exploration.
+        We collected over <Counter from={0} to={400} /> data points to be used
+        for exploration.
       </p>
       <div className="flex justify-center">
         <a
