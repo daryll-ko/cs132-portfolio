@@ -5,23 +5,6 @@ import { BsLightbulb, BsQuestionCircle, BsCheck2Circle } from "react-icons/bs";
 import { InlineMath } from "react-katex";
 
 function Overview() {
-  const x = useMotionValue(150);
-  const y = useMotionValue(75);
-
-  const rotateX = useTransform(y, [0, 150], [45, -45]);
-  const rotateY = useTransform(x, [0, 300], [-45, 45]);
-
-  function handleMouse(e: React.MouseEvent<HTMLDivElement>) {
-    const rect = e.currentTarget.getBoundingClientRect();
-    x.set(e.clientX - rect.left);
-    y.set(e.clientY - rect.top);
-  }
-
-  function resetMouse() {
-    x.set(150);
-    y.set(75);
-  }
-
   const data = [
     {
       icon: <BsLightbulb size={60} />,
@@ -71,9 +54,7 @@ function Overview() {
           </motion.div>
         ))}
       </div>
-      <p className="my-16 text-center text-lg">
-        What will we be looking at?
-      </p>
+      <p className="my-16 text-center text-lg">What will we be looking at?</p>
       <div className="flex flex-col items-center gap-10">
         <div className="w-full rounded-md border border-solid border-black bg-gray-100 py-10 px-10 md:max-w-[40rem]">
           <h3 className="mb-5 text-2xl font-bold">Research Question</h3>
