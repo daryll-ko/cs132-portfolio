@@ -66,8 +66,12 @@ function Collection() {
             key={index}
             className="h-80 w-80 overflow-hidden rounded-md border border-solid border-black bg-gray-100"
           >
-            <div className="flex h-[50%] justify-center border-b border-solid border-black bg-white py-2">
-              <img src={img} alt="Sample gradient" className="h-full" />
+            <div className="flex h-[50%] flex-col justify-center border-b border-solid border-black bg-white p-3">
+              <img
+                src={img}
+                alt="Sample gradient"
+                className="mx-auto max-h-full"
+              />
             </div>
             <div className="flex h-[50%] flex-col justify-center gap-2">
               <h3 className="text-xl font-bold">{heading}</h3>
