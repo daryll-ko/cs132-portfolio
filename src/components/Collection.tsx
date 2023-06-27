@@ -1,14 +1,14 @@
 import { motion } from "framer-motion";
 
-import SampleGradient from "../assets/sample-gradient.jpeg";
-import SampleGradient2 from "../assets/sample-gradient-2.jpeg";
-import SampleGradient3 from "../assets/sample-gradient-3.jpeg";
+import Twint from "../assets/twint.png";
+import Curation from "../assets/curation.png";
+import ManualLabeling from "../assets/manual_labeling.png";
 import Counter from "./Counter";
 
 function Collection() {
   const data = [
     {
-      img: SampleGradient,
+      img: Twint,
       heading: "Using twint",
       text: (
         <p>
@@ -25,7 +25,7 @@ function Collection() {
       ),
     },
     {
-      img: SampleGradient2,
+      img: Curation,
       heading: "Tweet curation",
       text: (
         <p>
@@ -35,7 +35,7 @@ function Collection() {
       ),
     },
     {
-      img: SampleGradient3,
+      img: ManualLabeling,
       heading: "Manual labeling",
       text: (
         <p>
@@ -66,8 +66,8 @@ function Collection() {
             key={index}
             className="h-80 w-80 overflow-hidden rounded-md border border-solid border-black bg-gray-100"
           >
-            <div className="h-[50%] overflow-hidden">
-              <img src={img} alt="Sample gradient" className="object-cover" />
+            <div className="flex h-[50%] justify-center border-b border-solid border-black bg-white py-2">
+              <img src={img} alt="Sample gradient" className="h-full" />
             </div>
             <div className="flex h-[50%] flex-col justify-center gap-2">
               <h3 className="text-xl font-bold">{heading}</h3>
@@ -81,18 +81,18 @@ function Collection() {
         exploration.
       </p>
       <div className="flex justify-center">
-        <motion.button
-          className="mx-auto rounded-md bg-blue-600 py-2 px-6 text-lg text-white"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
+        <a
+          href="https://docs.google.com/spreadsheets/d/1xeTTNx1zVFSfcaIIqL7B2uOQ3gnYt_L5z_ioXfwIL5Q/edit#gid=107810933"
+          target="_blank"
         >
-          <a
-            href="https://docs.google.com/spreadsheets/d/1xeTTNx1zVFSfcaIIqL7B2uOQ3gnYt_L5z_ioXfwIL5Q/edit#gid=107810933"
-            target="_blank"
+          <motion.button
+            className="mx-auto rounded-md bg-blue-600 py-2 px-6 text-lg text-white"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
-            Look at our sheets!
-          </a>
-        </motion.button>
+            Look at our dataset!
+          </motion.button>
+        </a>
       </div>
     </section>
   );
