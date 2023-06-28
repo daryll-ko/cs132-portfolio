@@ -34,11 +34,11 @@ function Team() {
           . I'm currently a 2<sup>nd</sup> year BS Computer Science student at
           the University of the Philippines, Diliman. My primary fields of
           interest are <span className="font-bold">complexity theory</span> (
-          <span className="italic">what</span> things we can do with CS),{" "}
+          <span className="italic">what</span> can we do?),{" "}
           <span className="font-bold">algorithms & data structures</span> (
-          <span className="italic">how</span> we do things in CS), and{" "}
+          <span className="italic">how</span> can we do it?), and{" "}
           <span className="font-bold">scientific computing</span> (
-          <span className="italic">where</span> we can apply CS). I enjoy seeing
+          <span className="italic">where</span> can we do it?). I enjoy seeing
           theory and application work together: it fulfills me whenever I see my
           thoughts turn into realities.
           <br />
