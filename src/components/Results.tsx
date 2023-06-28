@@ -33,7 +33,7 @@ function Results() {
       text: (
         <p>
           The regressions tell us that time only had a <b>significant</b>{" "}
-          <InlineMath math="(p < 0.05)" /> relationship with the{" "}
+          <InlineMath math="(p < 0.03)" /> relationship with the{" "}
           <span className="font-bold text-[#656ffa]">credibility</span> cluster.
         </p>
       ),
