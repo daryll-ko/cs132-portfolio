@@ -92,8 +92,11 @@ function Collection() {
         ))}
       </div>
       <p className="mb-8 text-center text-lg text-gray-700 md:text-2xl">
-        We collected over <Counter from={0} to={400} /> data points to be used
-        for exploration.
+        We collected{" "}
+        <b>
+          over <Counter from={0} to={400} />
+        </b>{" "}
+        data points to be used for exploration.
       </p>
       <div className="flex justify-center">
         <a
