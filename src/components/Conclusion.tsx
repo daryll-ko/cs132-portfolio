@@ -73,7 +73,7 @@ function Conclusion() {
           What should we do with this info?
         </p>
         <p className="text-md mx-auto mb-8 max-w-[75%] text-center text-gray-700 md:text-lg">
-          Build on top of it! Though our final dataset contained over 400
+          Build on top of it! Though our final dataset contained about 400
           tweets, a <b>wider dataset</b> could possibly{" "}
           <b>improve model performance</b> and <b>give better insights</b>.
           Using <b>more clusters</b> is also a possibility; there are a lot of
