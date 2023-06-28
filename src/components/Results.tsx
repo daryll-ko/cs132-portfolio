@@ -80,10 +80,10 @@ function Results() {
         <b>points in time</b> that we can investigate further. Doing so may lead
         us to even more <b>insights</b>!
       </p>
-      <p className="mb-8 text-center text-lg font-bold text-gray-700 md:text-2xl">
+      <p className="mt-16 mb-8 text-center text-lg font-bold text-gray-700 md:text-2xl">
         How does this fit into what we already know?
       </p>
-      <p className="text-md mx-auto mb-8 max-w-[75%] text-center text-gray-700 md:text-lg">
+      <p className="text-md mx-auto max-w-[75%] text-center text-gray-700 md:text-lg">
         We know that opinions towards <b>political candidates</b> and{" "}
         <b>incumbents</b> tend to develop rapidly over time. As more events
         happen across a political cycle, people gain more <b>context</b> and
