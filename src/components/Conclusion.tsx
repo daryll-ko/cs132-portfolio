@@ -95,7 +95,10 @@ function Conclusion() {
         </a>
       </div>
       <div className="mt-16 flex flex-col items-center justify-center gap-10 text-lg text-gray-700 md:text-2xl">
-        <img src={CelebrationImage} className="h-80 rounded-xl md:h-96" />
+        <img
+          src={CelebrationImage}
+          className="max-h-80 rounded-xl md:max-h-96"
+        />
         <p>Thanks for visiting! :)</p>
       </div>
     </section>
