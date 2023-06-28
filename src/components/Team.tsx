@@ -1,6 +1,6 @@
-import DaryllImage from "../assets/daryll.jpeg";
-import WestinImage from "../assets/westin.png";
-import ZandrewImage from "../assets/zandrew.png";
+import DaryllImage from "../assets/daryll_2.png";
+import WestinImage from "../assets/westin_2.png";
+import ZandrewImage from "../assets/zandrew_2.png";
 
 import { AiFillGithub } from "react-icons/ai";
 import { BsFacebook, BsDiscord, BsFillSunFill } from "react-icons/bs";
