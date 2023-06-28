@@ -31,7 +31,7 @@ function Conclusion() {
       className="bg-[#efefef] py-20 px-6 sm:px-10 lg:px-16"
     >
       <h1 className="mb-8 text-center text-3xl font-bold md:text-5xl">
-        Now what?
+        What now?
       </h1>
       <h2 className="text-center text-lg text-gray-700 md:text-2xl">
         [anong silbi ng research natin]
