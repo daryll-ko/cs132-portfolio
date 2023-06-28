@@ -9,15 +9,30 @@ function Overview() {
   const data = [
     {
       icon: <BsTwitter size={60} />,
-      text: "Twitter has become a prime breeding ground for disinformation campaigns involving political figures.",
+      text: (
+        <p>
+          Twitter has become a prime <b>breeding ground</b> for{" "}
+          <b>disinformation campaigns</b> involving <b>political figures</b>.
+        </p>
+      ),
     },
     {
       icon: <BsHourglassSplit size={60} />,
-      text: "Understanding the temporal patterns of disinformation is crucial in combating its impact on public perception.",
+      text: (
+        <p>
+          Understanding the <b>temporal patterns</b> of disinformation is
+          crucial in combating its impact on <b>public perception</b>.
+        </p>
+      ),
     },
     {
       icon: <HiMagnifyingGlass size={60} />,
-      text: "Our research focuses on Leni-related disinformation, utilizing scraped tweets to uncover temporal patterns.",
+      text: (
+        <p>
+          Our research focuses on <b>Leni-related</b> disinformation, utilizing{" "}
+          <b>scraped tweets</b> to uncover these temporal patterns.
+        </p>
+      ),
     },
   ];
 
@@ -45,7 +60,7 @@ function Overview() {
             className="flex h-80 w-80 flex-col justify-center gap-5 rounded-md border border-solid border-black bg-gray-100 py-10"
           >
             <div className="mx-auto w-fit text-[#e01190]">{icon}</div>
-            <div className="px-2">{text}</div>
+            <div className="px-4">{text}</div>
           </motion.div>
         ))}
       </div>
